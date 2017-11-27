@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/) for
 official project tracking. For technical reasons, the module version
 number cannot be expressed using Semantic Versioning.
 
+## unreleased (2.0.0)
+### Features
+- Made to support PowerShell Core's built-in SemanticVersion type.
+
+### Breaking changes
+- Compare-SemanticVersion: The "AreCompatible" property has been replaced with the "IsCompatible" property.
+- Requires PowerShell v6.0 or later.
+- All functions that previously output a custom PSObject for semver now output the built-in type
+  System.Management.Automation.SemanticVersion.
+
 ## 1.3.0 - 2017-11-12
 ### Features
 - Compare-SemanticVersion now takes pipeline input.
